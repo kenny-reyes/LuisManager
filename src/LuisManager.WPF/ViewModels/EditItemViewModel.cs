@@ -2,7 +2,6 @@
 using System.IO;
 using Caliburn.Micro;
 using LuisManager.Domain.Enums;
-using LuisManager.WPF.Messages;
 using Microsoft.Win32;
 
 namespace LuisManager.WPF.ViewModels
@@ -35,16 +34,16 @@ namespace LuisManager.WPF.ViewModels
             set
             {
                 _item = value;
-                Engineer = _item.Engineer;
-                Id = _item.Id;
-                Name = _item.Name;
-                RawMaterial = _item.RawMaterial;
-                DevelopmentStartDate = _item.DevelopmentStartDate;
-                ExpectedCompletionDate = _item.ExpectedCompletionDate;
-                SupplyManagementContact = _item.SupplyManagementContact;
-                Notes = _item.Notes;
-                Status = _item.Status;
-                ImageSource = new Uri(_imagesDirectory + Item.ImageSource);
+                //Engineer = _item.Engineer;
+                //Id = _item.Id;
+                //Name = _item.Name;
+                //RawMaterial = _item.RawMaterial;
+                //DevelopmentStartDate = _item.DevelopmentStartDate;
+                //ExpectedCompletionDate = _item.ExpectedCompletionDate;
+                //SupplyManagementContact = _item.SupplyManagementContact;
+                //Notes = _item.Notes;
+                //Status = _item.Status;
+                //ImageSource = new Uri(_imagesDirectory + Item.ImageSource);
             }
         }
 
@@ -179,18 +178,18 @@ namespace LuisManager.WPF.ViewModels
 
         public void SaveAndCloseEditWindow()
         {
-            var previousStatus = _item.Status;
-            _item.Engineer = Engineer;
-            _item.Id = Id;
-            _item.Name = Name;
-            _item.RawMaterial = RawMaterial;
-            _item.DevelopmentStartDate = DevelopmentStartDate;
-            _item.ExpectedCompletionDate = ExpectedCompletionDate;
-            _item.SupplyManagementContact = SupplyManagementContact;
-            _item.Notes = Notes;
-            _item.Status = Status;
-            _item.ImageSource = ImageSource.LocalPath.Replace(_imagesDirectory, string.Empty);
-            _eventAggregator.PublishOnUIThread(new UpdateLanesMessage(_item, previousStatus));
+            //var previousStatus = _item.Status;
+            //_item.Engineer = Engineer;
+            //_item.Id = Id;
+            //_item.Name = Name;
+            //_item.RawMaterial = RawMaterial;
+            //_item.DevelopmentStartDate = DevelopmentStartDate;
+            //_item.ExpectedCompletionDate = ExpectedCompletionDate;
+            //_item.SupplyManagementContact = SupplyManagementContact;
+            //_item.Notes = Notes;
+            //_item.Status = Status;
+            //_item.ImageSource = ImageSource.LocalPath.Replace(_imagesDirectory, string.Empty);
+            //_eventAggregator.PublishOnUIThread(new UpdateLanesMessage(_item, previousStatus));
             CloseEditWindow();
         }
     }

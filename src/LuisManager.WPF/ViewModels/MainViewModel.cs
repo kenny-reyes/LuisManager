@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
+﻿using System;
+using System.Collections.Generic;
 using System.Windows;
 using Caliburn.Micro;
 using LuisManager.Common.Contracts;
+using LuisManager.Domain;
 using LuisManager.WPF.Messages;
 using LuisManager.WPF.ViewModels.Models;
+using Microsoft.Win32;
 
 namespace LuisManager.WPF.ViewModels
 {
@@ -14,11 +15,15 @@ namespace LuisManager.WPF.ViewModels
         private const int TabListView = 0;
         private const int TabGridView = 1;
         private readonly IDataProvider _dataProvider;
+        private readonly IConfigurationService _configurationService;
         private readonly IEventAggregator _eventAggregator;
+        private string _fileOpennedPath;
+        private LuisScheme _data;
 
-        public MainViewModel(IDataProvider dataProvider, IEventAggregator eventAggregator)
+        public MainViewModel(IDataProvider dataProvider, IConfigurationService configurationService, IEventAggregator eventAggregator)
         {
             _dataProvider = dataProvider;
+            _configurationService = configurationService;
             _eventAggregator = eventAggregator;
         }
         
@@ -36,16 +41,15 @@ namespace LuisManager.WPF.ViewModels
 
         public List<Screen> ScreenList { get; set; }
 
-        public ObservableCollection<ItemViewModel> DevelopmentItems { get; set; } = new ObservableCollection<ItemViewModel>();
-
-        protected override void OnViewAttached(object view, object context)
+        public LuisScheme Data
         {
-            foreach (var item in _dataProvider.GetData())
+            get => _data;
+            set
             {
-                DevelopmentItems.Add(new ItemViewModel(item, _eventAggregator));
+                if (Equals(value, _data)) return;
+                _data = value;
+                NotifyOfPropertyChange(() => Data);
             }
-            
-            base.OnViewAttached(view, context);
         }
 
         public void ShowListView()
@@ -65,8 +69,6 @@ namespace LuisManager.WPF.ViewModels
             var item = new ItemViewModel(_eventAggregator);
             _eventAggregator.PublishOnUIThread(new EditItemMessage(item));
 
-            if (item.Id == null) return;
-            DevelopmentItems.Add(item);
         }
 
         public void Login()
@@ -86,8 +88,28 @@ namespace LuisManager.WPF.ViewModels
 
         public void Save()
         {
-            var products = DevelopmentItems?.Select(item => item.Product).ToArray();
-            _dataProvider.SetData(products);
+            //var products = DevelopmentItems?.Select(item => item.LuisScheme);
+            //_dataProvider.SetData(products);
+        }
+
+        public void OpenFile()
+        {
+            var openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "json|*.json";
+            try
+            {
+                if (openFileDialog.ShowDialog() == true)
+                {
+                    _fileOpennedPath = openFileDialog.FileName;
+                }
+                if (string.IsNullOrWhiteSpace(_fileOpennedPath)) return;
+                _configurationService.Configuration.JsonFilePath = _fileOpennedPath;
+                _data = _dataProvider.GetData();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
     }
 }

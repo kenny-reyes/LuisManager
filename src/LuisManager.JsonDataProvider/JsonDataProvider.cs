@@ -17,18 +17,18 @@ namespace LuisManager.JsonDataProvider
             _jsonHelper = jsonHelper;
         }
 
-        public Product[] GetData()
+        public LuisScheme GetData()
         {
             var jsonFilePath = _configuration.Configuration.JsonFilePath;
 
-            return _jsonHelper.Deserialize<Product[]>(_fileHelper.ReadTextFile(jsonFilePath));
+            return _jsonHelper.Deserialize<LuisScheme>(_fileHelper.ReadTextFile(jsonFilePath));
         }
 
-        public void SetData(Product[] products)
+        public void SetData(LuisScheme luisSchemes)
         {
             var jsonFilePath = _configuration.Configuration.JsonFilePath;
 
-            _fileHelper.WriteTextFile(jsonFilePath, _jsonHelper.Serialize(products));
+            _fileHelper.WriteTextFile(jsonFilePath, _jsonHelper.Serialize(luisSchemes));
         }
     }
 }

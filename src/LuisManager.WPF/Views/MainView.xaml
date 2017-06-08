@@ -1,6 +1,4 @@
-﻿
-
-<UserControl x:Class="LuisManager.WPF.Views.MainView"
+﻿<UserControl x:Class="LuisManager.WPF.Views.MainView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -22,6 +20,8 @@
             <MenuItem Header="{x:Static localization:Resources.File_Menu}" Template="{DynamicResource MenuItemControlTemplate}" Margin="25,0,0,0">
                 <MenuItem Header="{x:Static localization:Resources.New_Menu}" Template="{StaticResource MenuItemBarControlTemplate}" 
                           cal:Message.Attach="NewItem()"/>
+                <MenuItem Header="Open file" Template="{StaticResource MenuItemBarControlTemplate}" 
+                          cal:Message.Attach="OpenFile()"/>
                 <MenuItem Header="{x:Static localization:Resources.Exit_Menu}" Template="{StaticResource MenuItemBarControlTemplate}"
                           cal:Message.Attach="Exit()"/>
             </MenuItem>

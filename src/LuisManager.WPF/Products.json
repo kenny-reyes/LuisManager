@@ -1,230 +1,1059 @@
-﻿[    
+﻿{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "UPComillasBot.BasicDialog",
+  "desc": "UP Comillas Bot retrieves information about subjects, schedules, location, etc",
+  "culture": "es-es",
+  "intents": [
     {
-        "Id": "RN3454",
-        "Engineer": "Russel Peters",
-        "Name": "Black Nose",
-        "RawMaterial": "Black foam",
-        "Status": "Production",
-        "DevelopmentStartDate": "",
-        "ExpectedCompletionDate": "",
-        "SupplyManagementContact": "Seattle 1511, Third Ave Seattle WA 98101 Washington T. (+1) 206 708 1285",
-        "Notes": "Everything you'd expect, and a little something more.",
-        "ImageSource": "Frabicnose400x300.jpg"
+      "name": "Areas"
     },
     {
-        "Id": "PN3476",
-        "Engineer": "Steve Jacobs",
-        "Name": "Frabric printed nose",
-        "RawMaterial": "Fabric with prints",
-        "Status": "Production",
-        "DevelopmentStartDate": "",
-        "ExpectedCompletionDate": "",
-        "SupplyManagementContact": "Seattle 1511, Third Ave Seattle WA 98101 Washington T. (+1) 206 708 1285",
-        "Notes": "Limited edition, very rare!",
-        "ImageSource": "Frabicnose400x300.jpg"
+      "name": "Ayuda"
     },
     {
-        "Id": "YN3171",
-        "Engineer": "Tony Wong",
-        "Name": "Oversized red nose",
-        "RawMaterial": "Red foam",
-        "Status": "QA",
-        "DevelopmentStartDate": "",
-        "ExpectedCompletionDate": "",
-        "SupplyManagementContact": "Seattle 1511, Third Ave Seattle WA 98101 Washington T. (+1) 206 708 1285",
-        "Notes": "Our best-selling classic.",
-        "ImageSource": "Frabicnose400x300.jpg"
+      "name": "Centros"
     },
     {
-        "Id": "ZX2584",
-        "Engineer": "Jane Smith",
-        "Name": "Rainbow nose",
-        "RawMaterial": "Multi-color foam",
-        "Status": "QA",
-        "DevelopmentStartDate": "",
-        "ExpectedCompletionDate": "",
-        "SupplyManagementContact": "Seattle 1511, Third Ave Seattle WA 98101 Washington T. (+1) 206 708 1285",
-        "Notes": "For the discerning performance comedian.",
-        "ImageSource": "Frabicnose400x300.jpg"
+      "name": "Grados"
     },
     {
-        "Id": "12358132",
-        "Engineer": "Ryan Drescher",
-        "Name": "Purple nose",
-        "RawMaterial": "Purple foam",
-        "Status": "BreatheTest",
-        "DevelopmentStartDate": "",
-        "ExpectedCompletionDate": "",
-        "SupplyManagementContact": "Seattle 1511, Third Ave Seattle WA 98101 Washington T. (+1) 206 708 1285",
-        "Notes": "",
-        "ImageSource": "blacknose400x300.jpg"
+      "name": "None"
     },
     {
-        "Id": "RN3454",
-        "Engineer": "Steve Jacobs",
-        "Name": "Kid size red nose",
-        "RawMaterial": "Red foam",
-        "Status": "BreatheTest",
-        "DevelopmentStartDate": "",
-        "ExpectedCompletionDate": "",
-        "SupplyManagementContact": "Seattle 1511, Third Ave Seattle WA 98101 Washington T. (+1) 206 708 1285",
-        "Notes": "Everything you'd expect, and a little something more.",
-        "ImageSource": "Frabicnose400x300.jpg"
+      "name": "Saludos"
     },
     {
-        "Id": "PN3476",
-        "Engineer": "Steve Jacobs",
-        "Name": "Collectors Edition",
-        "RawMaterial": "High quality foam",
-        "Status": "Prototype",
-        "DevelopmentStartDate": "",
-        "ExpectedCompletionDate": "",
-        "SupplyManagementContact": "Seattle 1511, Third Ave Seattle WA 98101 Washington T. (+1) 206 708 1285",
-        "Notes": "Limited edition, very rare!",
-        "ImageSource": "Frabicnose400x300.jpg"
-    },
-    {
-        "Id": "YN3171",
-        "Engineer": "Tony Wong",
-        "Name": "Basic Nose",
-        "RawMaterial": "Foam",
-        "Status": "Prototype",
-        "DevelopmentStartDate": "",
-        "ExpectedCompletionDate": "",
-        "SupplyManagementContact": "Seattle 1511, Third Ave Seattle WA 98101 Washington T. (+1) 206 708 1285",
-        "Notes": "Our best-selling classic.",
-        "ImageSource": "Frabicnose400x300.jpg"
-    },
-    {
-        "Id": "ZX2584",
-        "Engineer": "Russel Peters",
-        "Name": "The Co'Nose seur",
-        "RawMaterial": "Purple foam",
-        "Status": "Prototype",
-        "DevelopmentStartDate": "",
-        "ExpectedCompletionDate": "",
-        "SupplyManagementContact": "Seattle 1511, Third Ave Seattle WA 98101 Washington T. (+1) 206 708 1285",
-        "Notes": "For the discerning performance comedian.",
-        "ImageSource": "Frabicnose400x300.jpg"
-    },
-    {
-        "Id": "12358132",
-        "Engineer": "Jane Smith",
-        "Name": "2 South St. SouthTown, 04093",
-        "RawMaterial": "Johan Harris",
-        "Status": "ConceptDesign",
-        "DevelopmentStartDate": "",
-        "ExpectedCompletionDate": "",
-        "SupplyManagementContact": "Seattle 1511, Third Ave Seattle WA 98101 Washington T. (+1) 206 708 1285",
-        "Notes": "",
-        "ImageSource": "blacknose400x300.jpg"
-    },
-    {
-        "Id": "RN3454",
-        "Engineer": "Jane Smith",
-        "Name": "Deluxe Nose",
-        "RawMaterial": "Johan Harris",
-        "Status": "ConceptDesign",
-        "DevelopmentStartDate": "",
-        "ExpectedCompletionDate": "",
-        "SupplyManagementContact": "Seattle 1511, Third Ave Seattle WA 98101 Washington T. (+1) 206 708 1285",
-        "Notes": "Everything you'd expect, and a little something more.",
-        "ImageSource": "Frabicnose400x300.jpg"
-    },
-    {
-        "Id": "PN3476",
-        "Engineer": "Ryan Drescher",
-        "Name": "Magic nose",
-        "RawMaterial": "TBD",
-        "Status": "Research",
-        "DevelopmentStartDate": "",
-        "ExpectedCompletionDate": "",
-        "SupplyManagementContact": "Seattle 1511, Third Ave Seattle WA 98101 Washington T. (+1) 206 708 1285",
-        "Notes": "Limited edition, very rare!",
-        "ImageSource": "Frabicnose400x300.jpg"
-    },
-    {
-        "Id": "YN3171",
-        "Engineer": "Marc Janson",
-        "Name": "Ethereal nose",
-        "RawMaterial": "TBD",
-        "Status": "Research",
-        "DevelopmentStartDate": "",
-        "ExpectedCompletionDate": "",
-        "SupplyManagementContact": "Seattle 1511, Third Ave Seattle WA 98101 Washington T. (+1) 206 708 1285",
-        "Notes": "Our best-selling classic.",
-        "ImageSource": "Frabicnose400x300.jpg"
-    },
-    {
-        "Id": "ZX2584",
-        "Engineer": "Jane Smith",
-        "Name": "The Co'Nose seur",
-        "RawMaterial": "Red foam",
-        "Status": "Production",
-        "DevelopmentStartDate": "",
-        "ExpectedCompletionDate": "",
-        "SupplyManagementContact": "Seattle 1511, Third Ave Seattle WA 98101 Washington T. (+1) 206 708 1285",
-        "Notes": "For the discerning performance comedian.",
-        "ImageSource": "Frabicnose400x300.jpg"
-    },
-    {
-        "Id": "12358132",
-        "Engineer": "Russel Peters",
-        "Name": "Patch Adams",
-        "RawMaterial": "Red foam",
-        "Status": "QA",
-        "DevelopmentStartDate": "",
-        "ExpectedCompletionDate": "",
-        "SupplyManagementContact": "Seattle 1511, Third Ave Seattle WA 98101 Washington T. (+1) 206 708 1285",
-        "Notes": "",
-        "ImageSource": "blacknose400x300.jpg"
-    },
-    {
-        "Id": "RN3454",
-        "Engineer": "Jane Smith",
-        "Name": "Deluxe Nose",
-        "RawMaterial": "Black foam",
-        "Status": "ConceptDesign",
-        "DevelopmentStartDate": "",
-        "ExpectedCompletionDate": "",
-        "SupplyManagementContact": "Seattle 1511, Third Ave Seattle WA 98101 Washington T. (+1) 206 708 1285",
-        "Notes": "Everything you'd expect, and a little something more.",
-        "ImageSource": "Frabicnose400x300.jpg"
-    },
-    {
-        "Id": "PN3476",
-        "Engineer": "Ryan Drescher",
-        "Name": "Orange nose",
-        "RawMaterial": "Orange foam",
-        "Status": "Production",
-        "DevelopmentStartDate": "",
-        "ExpectedCompletionDate": "",
-        "SupplyManagementContact": "Seattle 1511, Third Ave Seattle WA 98101 Washington T. (+1) 206 708 1285",
-        "Notes": "Limited edition, very rare!",
-        "ImageSource": "Frabicnose400x300.jpg"
-    },
-    {
-        "Id": "YN3171",
-        "Engineer": "Marc Janson",
-        "Name": "Basic Nose",
-        "RawMaterial": "Foam",
-        "Status": "Production",
-        "DevelopmentStartDate": "",
-        "ExpectedCompletionDate": "",
-        "SupplyManagementContact": "Seattle 1511, Third Ave Seattle WA 98101 Washington T. (+1) 206 708 1285",
-        "Notes": "Our best-selling classic.",
-        "ImageSource": "Frabicnose400x300.jpg"
-    },
-    {
-        "Id": "ZX2584",
-        "Engineer": "Russel Peters",
-        "Name": "Pink nose",
-        "RawMaterial": "Pink foam",
-        "Status": "BreatheTest",
-        "DevelopmentStartDate": "",
-        "ExpectedCompletionDate": "",
-        "SupplyManagementContact": "Seattle 1511, Third Ave Seattle WA 98101 Washington T. (+1) 206 708 1285",
-        "Notes": "For the discerning performance comedian.",
-        "ImageSource": "Frabicnose400x300.jpg"
+      "name": "Sedes"
     }
-]
+  ],
+  "entities": [
+    {
+      "name": "Areas"
+    },
+    {
+      "name": "Centro"
+    },
+    {
+      "name": "Grado"
+    },
+    {
+      "name": "Sede"
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [],
+  "actions": [],
+  "model_features": [
+    {
+      "name": "Areas",
+      "mode": true,
+      "words": "Empresarial,Jurídica,Juridica,Social,Humanistica,Humanística,Sanitaria,Jurídico,Juridico,Sanitario,jurídicos,empresariales,area de ingeniería,area de ingenieria,área de ingeniería,área de ingenieria,area de Teología,area de teologia,área de teologia,área de teología,ingenieria,ingeniería,teología",
+      "activated": true
+    },
+    {
+      "name": "Centro",
+      "mode": true,
+      "words": "Facultad de derecho,facultad de Ciencias Económicas y empresariales,Facultad de Ciencias Humanas y Sociales,Facultad de Teología,Escuela Técnica Superior de Ingeniería,Escuela de Enfermería y Fisioterapia,derecho,teologia,economicas,economia,empresas,empresariales,humanidades,sociales,ingenieria,enfermeria,fisioterapia",
+      "activated": true
+    },
+    {
+      "name": "Grado",
+      "mode": true,
+      "words": "Bachiller Eclesiástico en Filosofía,Doble Grado en Relaciones Internacionales ( Bilingüe ) y Traducción e Interpretación,Grado en Traducción e Interpretación,Ingeniería en Informática ( IINF ),Ingeniería Industrial ( IIND ),Grado en Ingeniería Telemática ( Programa de Ingeniería de Telecomunicación 2010 ),Grado en Ingeniería Electromecánica ( Programa de Ingeniería Industrial 2010 ),Grado en Derecho y Grado en Ciencias Políticas y de la Administración Pública - E - 5 ( Doble titulación ),Grado en Derecho y Diploma en International Legal Studies - E1 I / E1 I francés,Grado en Derecho y Diploma en Derecho de los Negocios - E1 N,Bachiller en Teología ( Grado en Teología ) . TUP : Programa de tarde,Bachiller en Teología ( Grado en Teología ) . Programa de mañana,Grado en Fisioterapia,Grado en Enfermería,Grado en Psicología,Grado en Relaciones Internacionales,Grado en Criminología,Grado en Ciencias de la Actividad Física y del Deporte,Doble Grado en Traducción e Interpretación y Comunicación Internacional / Bachelor in Global Communication . ( TI - COM ),Grado en Trabajo Social,Doble Grado en Relaciones Internacionales ( Bilingüe ) y Comunicación Internacional / Bachelor in Global Communication ( RRII - COM ),Doble Grado en Psicología y Criminología,Grado en Filosofía Política y Economía . ( Online ) Interuniversitario Deusto y Comillas,Grado en Filosofía,Grado en Educación Primaria con Mención en Lengua Extranjera [ Inglés ],Grado en Educación Infantil con Mención en Lengua Extranjera [ Inglés ],Doble Grado en Educación Primaria y Educación Infantil con Menciones en Lengua Extranjera [ Inglés ] y en Pedagogía Terapéutica,Doble Grado en Educación Infantil y Educación Primaria con Menciones en Lengua Extranjera [ Inglés ] y en Pedagogía Terapéutica,Doble Grado en Criminología y Trabajo Social,Doble Grado en Ciencias de la Actividad Física y del Deporte y Educación Primaria,Doble Grado en Ingeniería en Tecnologías de Telecomunicación y Análisis de Negocios / Business Analytics ( GITT - BA ),Doble Grado en Ingeniería en Tecnologías de Telecomunicación y Administración y Dirección de Empresas [ ADE ],Grado en Ingeniería en Tecnologías de Telecomunicación ( GITT ),Doble Grado en Ingeniería en Tecnologías Industriales y Administración y Dirección de Empresas [ ADE ],Grado en Ingeniería en Tecnologías Industriales ( GITI ),Doble Grado en Derecho y Relaciones Internacionales . ( E - 5 ),Doble Grado en Análisis de Negocios / Business Analytics y Derecho . ( E - 3 Analytics ),Doble Grado en Administración y Dirección de Empresas [ ADE ],y Derecho . ( E - 3 ),Grado en Derecho . ( E - 1 ),Doble Grado en Administración y Dirección de Empresas [ ADE ] y Relaciones Internacionales . ( E - 6 ),Grado en Administración y Dirección de Empresas [ ADE ] con Mención Internacional . ( E - 4 ),Grado en Administración y Dirección de Empresas [ ADE ] . Bilingüe en Inglés ( E - 2 ),Grado en Administración y Dirección de Empresas [ ADE ] . ( E - 2 ),psicologia,psicología,administración,derecho,administracion,informatica,informática,Dirección de Empresas,Analisis de negocios,análisis de negocios,relaciones internacionales,tecnologias industriales,tecnologías industriales,Teleco,telecomunicaciones,telecomunicación,telecomunicacion,Grado en Ingeniería,Grado en ingenieria,Ciencias de la actividad física,actividad física,ciencias de la actividad fisica,actividad fisica,deporte,educacion primaria,educación primaria,trabajo social,criminologia,criminología,Ciencias de la Actividad Física y del Deporte,Ciencias de la Actividad Fisica y del Deporte,educacion infantil,educación infantil,pedagogia,pedagogía,terapeutica,terapéutica,filosofía,filosofia,politica,política,economía,economia,deusto,traducción,interpretacion,interpretación,traduccion,enfermería,fisioterapia,bachiller en teología,bachiller en teologia,electromecanica,electromecánica,telematica,telemática,industrial,eclesiastico,eclesiástico,grado en enfermeria,enfermeria,grado en enfermería",
+      "activated": true
+    },
+    {
+      "name": "Sede",
+      "mode": true,
+      "words": "Cantoblanco,Ciempozuelos,ICAI - Alberto Aguilera,ICADE - Alberto Aguilera,ICAI,ICADE,Alberto Aguilera",
+      "activated": true
+    }
+  ],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "becas",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "llegar",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "alumno",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "perfil",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "llego",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "iglesia",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "como llegar",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "que puedo estudiar",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "¿que instalaciones tiene?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "qué tipo de universidad es?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "localización",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "buenas tardes",
+      "intent": "Saludos",
+      "entities": []
+    },
+    {
+      "text": "buenos días",
+      "intent": "Saludos",
+      "entities": []
+    },
+    {
+      "text": "que tal?",
+      "intent": "Saludos",
+      "entities": []
+    },
+    {
+      "text": "hola",
+      "intent": "Saludos",
+      "entities": []
+    },
+    {
+      "text": "que pasa chato?",
+      "intent": "Saludos",
+      "entities": []
+    },
+    {
+      "text": "cómo va todo?",
+      "intent": "Saludos",
+      "entities": []
+    },
+    {
+      "text": "hey",
+      "intent": "Saludos",
+      "entities": []
+    },
+    {
+      "text": "alo",
+      "intent": "Saludos",
+      "entities": []
+    },
+    {
+      "text": "buenas",
+      "intent": "Saludos",
+      "entities": []
+    },
+    {
+      "text": "buenas noches",
+      "intent": "Saludos",
+      "entities": []
+    },
+    {
+      "text": "hola que pasha",
+      "intent": "Saludos",
+      "entities": []
+    },
+    {
+      "text": "holaaaaa",
+      "intent": "Saludos",
+      "entities": []
+    },
+    {
+      "text": "cuantos grados teneis?",
+      "intent": "Grados",
+      "entities": []
+    },
+    {
+      "text": "que grados ofreceis?",
+      "intent": "Grados",
+      "entities": []
+    },
+    {
+      "text": "teneis algún doble grado?",
+      "intent": "Grados",
+      "entities": []
+    },
+    {
+      "text": "quiero ver todos los grados que teneis",
+      "intent": "Grados",
+      "entities": []
+    },
+    {
+      "text": "listado de grados disponibles",
+      "intent": "Grados",
+      "entities": []
+    },
+    {
+      "text": "me puedes informar sobre los grados?",
+      "intent": "Grados",
+      "entities": []
+    },
+    {
+      "text": "quiero saber cuantos grados hay disponibles?",
+      "intent": "Grados",
+      "entities": []
+    },
+    {
+      "text": "dame todos los grados de comillas",
+      "intent": "Grados",
+      "entities": []
+    },
+    {
+      "text": "dime los grados que teneis",
+      "intent": "Grados",
+      "entities": []
+    },
+    {
+      "text": "grados",
+      "intent": "Grados",
+      "entities": []
+    },
+    {
+      "text": "quiero saber vuestros grados",
+      "intent": "Grados",
+      "entities": []
+    },
+    {
+      "text": "información sobre grados",
+      "intent": "Grados",
+      "entities": []
+    },
+    {
+      "text": "quiero saber los grados",
+      "intent": "Grados",
+      "entities": []
+    },
+    {
+      "text": "dame todos los grados",
+      "intent": "Grados",
+      "entities": []
+    },
+    {
+      "text": "dobles grados",
+      "intent": "Grados",
+      "entities": []
+    },
+    {
+      "text": "dime grados",
+      "intent": "Grados",
+      "entities": []
+    },
+    {
+      "text": "que grados?",
+      "intent": "Grados",
+      "entities": []
+    },
+    {
+      "text": "listame los grados",
+      "intent": "Grados",
+      "entities": []
+    },
+    {
+      "text": "necesito los grados",
+      "intent": "Grados",
+      "entities": []
+    },
+    {
+      "text": "quiero información sobre el grado en derecho",
+      "intent": "Grados",
+      "entities": [
+        {
+          "entity": "Grado",
+          "startPos": 28,
+          "endPos": 43
+        }
+      ]
+    },
+    {
+      "text": "quiero saber sobre dirección de empresas",
+      "intent": "Grados",
+      "entities": [
+        {
+          "entity": "Grado",
+          "startPos": 19,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "hay algun grado en deporte?",
+      "intent": "Grados",
+      "entities": [
+        {
+          "entity": "Grado",
+          "startPos": 19,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "cuantos grados de administración tenéis?",
+      "intent": "Grados",
+      "entities": [
+        {
+          "entity": "Grado",
+          "startPos": 18,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "dame informacion de derecho",
+      "intent": "Grados",
+      "entities": [
+        {
+          "entity": "Grado",
+          "startPos": 20,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "dame informacion sobre derecho",
+      "intent": "Grados",
+      "entities": [
+        {
+          "entity": "Grado",
+          "startPos": 23,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "quiero saber sobre el grado en ingeniería electromecánica (programa de ingeniería industrial 2010)",
+      "intent": "Grados",
+      "entities": [
+        {
+          "entity": "Grado",
+          "startPos": 22,
+          "endPos": 97
+        }
+      ]
+    },
+    {
+      "text": "psicología",
+      "intent": "Grados",
+      "entities": [
+        {
+          "entity": "Grado",
+          "startPos": 0,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "doble grado en ingeniería en tecnologías industriales, y administración y dirección de empresas [ade]",
+      "intent": "Grados",
+      "entities": [
+        {
+          "entity": "Grado",
+          "startPos": 0,
+          "endPos": 100
+        }
+      ]
+    },
+    {
+      "text": "grado en erfermeria",
+      "intent": "Grados",
+      "entities": [
+        {
+          "entity": "Grado",
+          "startPos": 0,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "¿qué tipos de estudio ofrecéis?",
+      "intent": "Grados",
+      "entities": []
+    },
+    {
+      "text": "derecho",
+      "intent": "Grados",
+      "entities": [
+        {
+          "entity": "Grado",
+          "startPos": 0,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "grado en derecho",
+      "intent": "Grados",
+      "entities": [
+        {
+          "entity": "Grado",
+          "startPos": 0,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "cuantos grados?",
+      "intent": "Grados",
+      "entities": []
+    },
+    {
+      "text": "cuantos grados hay?",
+      "intent": "Grados",
+      "entities": []
+    },
+    {
+      "text": "doble grado en ciencias de la actividad física y del deporte y educación primaria",
+      "intent": "Grados",
+      "entities": [
+        {
+          "entity": "Grado",
+          "startPos": 0,
+          "endPos": 80
+        }
+      ]
+    },
+    {
+      "text": "grado en administración y dirección de empresas [ade]. (e-2)",
+      "intent": "Grados",
+      "entities": [
+        {
+          "entity": "Grado",
+          "startPos": 0,
+          "endPos": 59
+        }
+      ]
+    },
+    {
+      "text": "grado en enfermería",
+      "intent": "Grados",
+      "entities": [
+        {
+          "entity": "Grado",
+          "startPos": 0,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "areas",
+      "intent": "Areas",
+      "entities": []
+    },
+    {
+      "text": "en que areas se divide la universidad?",
+      "intent": "Areas",
+      "entities": []
+    },
+    {
+      "text": "areas disponibles",
+      "intent": "Areas",
+      "entities": []
+    },
+    {
+      "text": "quiero saber las areas disponibles?",
+      "intent": "Areas",
+      "entities": []
+    },
+    {
+      "text": "cuantas areas hay?",
+      "intent": "Areas",
+      "entities": []
+    },
+    {
+      "text": "que areas hay?",
+      "intent": "Areas",
+      "entities": []
+    },
+    {
+      "text": "areas de enseñanza",
+      "intent": "Areas",
+      "entities": []
+    },
+    {
+      "text": "información sobre areas",
+      "intent": "Areas",
+      "entities": []
+    },
+    {
+      "text": "area",
+      "intent": "Areas",
+      "entities": []
+    },
+    {
+      "text": "dame informacion sobre el area empresarial",
+      "intent": "Areas",
+      "entities": [
+        {
+          "entity": "Areas",
+          "startPos": 31,
+          "endPos": 41
+        }
+      ]
+    },
+    {
+      "text": "dame informacion sobre el sector sanitario",
+      "intent": "Areas",
+      "entities": [
+        {
+          "entity": "Areas",
+          "startPos": 33,
+          "endPos": 41
+        }
+      ]
+    },
+    {
+      "text": "quiero saber sobre el area empresarial",
+      "intent": "Areas",
+      "entities": [
+        {
+          "entity": "Areas",
+          "startPos": 27,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "informacion sobre las enseñanzas empresariales",
+      "intent": "Areas",
+      "entities": [
+        {
+          "entity": "Areas",
+          "startPos": 33,
+          "endPos": 45
+        }
+      ]
+    },
+    {
+      "text": "quiero saber sobre el sector sanitario",
+      "intent": "Areas",
+      "entities": [
+        {
+          "entity": "Areas",
+          "startPos": 29,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "que grados teneis en el area juridica?",
+      "intent": "Areas",
+      "entities": [
+        {
+          "entity": "Areas",
+          "startPos": 29,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "dame los grados empresariales",
+      "intent": "Areas",
+      "entities": [
+        {
+          "entity": "Areas",
+          "startPos": 16,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "quiero saber los grados juridicos",
+      "intent": "Areas",
+      "entities": [
+        {
+          "entity": "Areas",
+          "startPos": 24,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "que ofreceis en el area de teología",
+      "intent": "Areas",
+      "entities": [
+        {
+          "entity": "Areas",
+          "startPos": 19,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "quiero saber los grados del area sanitario",
+      "intent": "Areas",
+      "entities": [
+        {
+          "entity": "Areas",
+          "startPos": 33,
+          "endPos": 41
+        }
+      ]
+    },
+    {
+      "text": "cuantos grados hay en el area jurídica?",
+      "intent": "Areas",
+      "entities": [
+        {
+          "entity": "Areas",
+          "startPos": 30,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "jurídica",
+      "intent": "Areas",
+      "entities": [
+        {
+          "entity": "Areas",
+          "startPos": 0,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "cuáles son los sectores de estudios que trabajáis?",
+      "intent": "Areas",
+      "entities": []
+    },
+    {
+      "text": "qué puedo estudiar",
+      "intent": "Areas",
+      "entities": []
+    },
+    {
+      "text": "qué puedo estudiar en la universidad de comillas?",
+      "intent": "Areas",
+      "entities": []
+    },
+    {
+      "text": "qué clase de estudios ofrecéis?",
+      "intent": "Areas",
+      "entities": []
+    },
+    {
+      "text": "tipos de estudios",
+      "intent": "Areas",
+      "entities": []
+    },
+    {
+      "text": "qué tipos de estudios ofrecéis?",
+      "intent": "Areas",
+      "entities": []
+    },
+    {
+      "text": "dime las áreas de estudios",
+      "intent": "Areas",
+      "entities": []
+    },
+    {
+      "text": "dime el área",
+      "intent": "Areas",
+      "entities": []
+    },
+    {
+      "text": "que áreas ofreceis?",
+      "intent": "Areas",
+      "entities": []
+    },
+    {
+      "text": "cuantas áreas hay?",
+      "intent": "Areas",
+      "entities": []
+    },
+    {
+      "text": "dame informacion del area empresarial",
+      "intent": "Areas",
+      "entities": [
+        {
+          "entity": "Areas",
+          "startPos": 26,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "hola, al area jurídica, por favor",
+      "intent": "Areas",
+      "entities": [
+        {
+          "entity": "Areas",
+          "startPos": 14,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "dame areas",
+      "intent": "Areas",
+      "entities": []
+    },
+    {
+      "text": "empresarial",
+      "intent": "Areas",
+      "entities": [
+        {
+          "entity": "Areas",
+          "startPos": 0,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "sanitaria",
+      "intent": "Areas",
+      "entities": [
+        {
+          "entity": "Areas",
+          "startPos": 0,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "dime los centros",
+      "intent": "Centros",
+      "entities": []
+    },
+    {
+      "text": "facultades",
+      "intent": "Centros",
+      "entities": []
+    },
+    {
+      "text": "dime las facultades",
+      "intent": "Centros",
+      "entities": []
+    },
+    {
+      "text": "cuantas facultades hay?",
+      "intent": "Centros",
+      "entities": []
+    },
+    {
+      "text": "que facultades tiene comillas?",
+      "intent": "Centros",
+      "entities": []
+    },
+    {
+      "text": "cuales son los centros?",
+      "intent": "Centros",
+      "entities": []
+    },
+    {
+      "text": "centros",
+      "intent": "Centros",
+      "entities": []
+    },
+    {
+      "text": "que centros tiene comillas?",
+      "intent": "Centros",
+      "entities": []
+    },
+    {
+      "text": "que centros hay disponibles?",
+      "intent": "Centros",
+      "entities": []
+    },
+    {
+      "text": "cuantos centros hay?",
+      "intent": "Centros",
+      "entities": []
+    },
+    {
+      "text": "dime las escuelas y las facultades",
+      "intent": "Centros",
+      "entities": []
+    },
+    {
+      "text": "cuantas escuelas hay?",
+      "intent": "Centros",
+      "entities": []
+    },
+    {
+      "text": "hay escuelas?",
+      "intent": "Centros",
+      "entities": []
+    },
+    {
+      "text": "centros de estudios",
+      "intent": "Centros",
+      "entities": []
+    },
+    {
+      "text": "centros de enseñanza",
+      "intent": "Centros",
+      "entities": []
+    },
+    {
+      "text": "escuelas de enseñanza",
+      "intent": "Centros",
+      "entities": []
+    },
+    {
+      "text": "facultad",
+      "intent": "Centros",
+      "entities": []
+    },
+    {
+      "text": "escuela",
+      "intent": "Centros",
+      "entities": []
+    },
+    {
+      "text": "centro",
+      "intent": "Centros",
+      "entities": []
+    },
+    {
+      "text": "informacion sobre la facultad de derecho",
+      "intent": "Centros",
+      "entities": [
+        {
+          "entity": "Centro",
+          "startPos": 21,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "quiero saber sobre la facultad de enfermería",
+      "intent": "Centros",
+      "entities": [
+        {
+          "entity": "Centro",
+          "startPos": 22,
+          "endPos": 43
+        }
+      ]
+    },
+    {
+      "text": "dónde esta la escuela de enfermería?",
+      "intent": "Centros",
+      "entities": [
+        {
+          "entity": "Centro",
+          "startPos": 14,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "quiero saber sobre la escuela de fisioterapia",
+      "intent": "Centros",
+      "entities": [
+        {
+          "entity": "Centro",
+          "startPos": 22,
+          "endPos": 44
+        }
+      ]
+    },
+    {
+      "text": "dónde puedo estudiar?",
+      "intent": "Centros",
+      "entities": []
+    },
+    {
+      "text": "facultad de derecho",
+      "intent": "Centros",
+      "entities": [
+        {
+          "entity": "Centro",
+          "startPos": 0,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "dime centros",
+      "intent": "Centros",
+      "entities": []
+    },
+    {
+      "text": "en que ciudad esta comillas?",
+      "intent": "Sedes",
+      "entities": []
+    },
+    {
+      "text": "donde puedo estudiar?",
+      "intent": "Sedes",
+      "entities": []
+    },
+    {
+      "text": "donde esta comillas?",
+      "intent": "Sedes",
+      "entities": []
+    },
+    {
+      "text": "donde estan las sedes",
+      "intent": "Sedes",
+      "entities": []
+    },
+    {
+      "text": "que sedes tiene comillas?",
+      "intent": "Sedes",
+      "entities": []
+    },
+    {
+      "text": "dime las sedes",
+      "intent": "Sedes",
+      "entities": []
+    },
+    {
+      "text": "cuantas sedes teneis?",
+      "intent": "Sedes",
+      "entities": []
+    },
+    {
+      "text": "en que ciudad esta la sede?",
+      "intent": "Sedes",
+      "entities": []
+    },
+    {
+      "text": "en que ciudad puedo estudiar?",
+      "intent": "Sedes",
+      "entities": []
+    },
+    {
+      "text": "en que lugar puedo estudiar?",
+      "intent": "Sedes",
+      "entities": []
+    },
+    {
+      "text": "hay algun doble grado en ciempozuelos?",
+      "intent": "Sedes",
+      "entities": [
+        {
+          "entity": "Sede",
+          "startPos": 25,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "que grados hay en cantoblanco?",
+      "intent": "Sedes",
+      "entities": [
+        {
+          "entity": "Sede",
+          "startPos": 18,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "donde esta icade?",
+      "intent": "Sedes",
+      "entities": [
+        {
+          "entity": "Sede",
+          "startPos": 11,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "que direccion tiene la sede de cantoblanco?",
+      "intent": "Sedes",
+      "entities": [
+        {
+          "entity": "Sede",
+          "startPos": 31,
+          "endPos": 41
+        }
+      ]
+    },
+    {
+      "text": "cuantos grados hay en alberto aguilera?",
+      "intent": "Sedes",
+      "entities": [
+        {
+          "entity": "Sede",
+          "startPos": 22,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "ciempozuelos",
+      "intent": "Sedes",
+      "entities": [
+        {
+          "entity": "Sede",
+          "startPos": 0,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "necesito ayuda",
+      "intent": "Ayuda",
+      "entities": []
+    },
+    {
+      "text": "me puedes ayudar",
+      "intent": "Ayuda",
+      "entities": []
+    },
+    {
+      "text": "échame una mano",
+      "intent": "Ayuda",
+      "entities": []
+    },
+    {
+      "text": "ayúdame",
+      "intent": "Ayuda",
+      "entities": []
+    },
+    {
+      "text": "aconséjame",
+      "intent": "Ayuda",
+      "entities": []
+    },
+    {
+      "text": "necesito consejo",
+      "intent": "Ayuda",
+      "entities": []
+    },
+    {
+      "text": "me puedes aconsejar?",
+      "intent": "Ayuda",
+      "entities": []
+    },
+    {
+      "text": "ayudame",
+      "intent": "Ayuda",
+      "entities": []
+    }
+  ]
+}

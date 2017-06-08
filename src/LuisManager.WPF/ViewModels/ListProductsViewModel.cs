@@ -1,8 +1,4 @@
-﻿using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Windows.Data;
-using Caliburn.Micro;
-using LuisManager.WPF.ViewModels.Models;
+﻿using Caliburn.Micro;
 
 namespace LuisManager.WPF.ViewModels
 {
@@ -16,18 +12,18 @@ namespace LuisManager.WPF.ViewModels
             DisplayName = Localization.Resources.ListView_Tab;
         }
 
-        public ObservableCollection<ItemViewModel> DevelopmentItems => _mainViewModel.DevelopmentItems;           
+        //public ObservableCollection<ItemViewModel> DevelopmentItems => _mainViewModel.DevelopmentItems;           
 
         public void SortProducts(object sortField, bool isSortAscending)
         {
             var field = sortField as string;
             if (string.IsNullOrEmpty(field)) return;
 
-            var view = CollectionViewSource.GetDefaultView(DevelopmentItems);
+            //var view = CollectionViewSource.GetDefaultView(DevelopmentItems);
 
-            var sortDirection = isSortAscending ? ListSortDirection.Ascending : ListSortDirection.Descending;
-            view.SortDescriptions.Clear();
-            view.SortDescriptions.Add(new SortDescription(field, sortDirection));
+            //var sortDirection = isSortAscending ? ListSortDirection.Ascending : ListSortDirection.Descending;
+            //view.SortDescriptions.Clear();
+            //view.SortDescriptions.Add(new SortDescription(field, sortDirection));
         }
     }
 }

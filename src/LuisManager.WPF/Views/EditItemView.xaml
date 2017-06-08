@@ -37,7 +37,7 @@
         <TextBlock Grid.Row="2" Grid.Column="1" Style="{StaticResource DialogTextBlockStyle}"
                    Text="Engineer:" />
         <TextBlock Grid.Row="3" Grid.Column="1" Style="{StaticResource DialogTextBlockStyle}" 
-                   Text="New product name:"/>
+                   Text="New luisScheme name:"/>
         <TextBlock Grid.Row="4" Grid.Column="1" Style="{StaticResource DialogTextBlockStyle}" 
                    Text="Raw material:"/>
         <TextBlock Grid.Row="5" Grid.Column="1" Style="{StaticResource DialogTextBlockStyle}" 
@@ -79,7 +79,7 @@
 
         <StackPanel Grid.Row="1" Grid.Column="4" Grid.RowSpan="10">
             <TextBlock Style="{StaticResource DialogTextBlockStyle}" VerticalAlignment="Top" Margin="0,18,0,8" 
-                       Text="Product photo:"/>
+                       Text="LuisScheme photo:"/>
             <Border BorderBrush="Gray" BorderThickness="1" MinHeight="290" MaxHeight="350" Background="White">
                 <Image Stretch="Uniform" 
                     Source="{Binding ImageSource}" />

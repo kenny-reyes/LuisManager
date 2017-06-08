@@ -50,7 +50,6 @@ namespace LuisManager.WPF.ViewModels
 
         public void Handle(UpdateLanesMessage message)
         {
-            _kanbanViewModel.InitializeLanes();
             _mainViewModel.Save();
         }
 

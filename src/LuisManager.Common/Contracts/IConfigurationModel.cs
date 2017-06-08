@@ -1,10 +1,8 @@
-﻿
-
-namespace LuisManager.Common.Contracts
+﻿namespace LuisManager.Common.Contracts
 {
     public interface IConfigurationModel
     {
-        string JsonFilePath { get; }
-        string DataSourceUrl { get; }
+        string JsonFilePath { set; get; }
+        string DataSourceUrl { set; get; }
     }
 }

@@ -127,7 +127,7 @@
     <value>Concept Design</value>
   </data>
   <data name="DevelopmentStatus_Production" xml:space="preserve">
-    <value>Production</value>
+    <value>LuisSchemeion</value>
   </data>
   <data name="DevelopmentStatus_Prototype" xml:space="preserve">
     <value>Prototype</value>
@@ -181,7 +181,7 @@
     <value>Menu</value>
   </data>
   <data name="NewProduct_Header" xml:space="preserve">
-    <value>New product name</value>
+    <value>New luisScheme name</value>
   </data>
   <data name="New_Menu" xml:space="preserve">
     <value>New</value>

@@ -6,7 +6,7 @@ namespace LuisManager.Common.Contracts
 {
     public interface IDataProvider
     {
-        Product[] GetData();
-        void SetData(Product[] products);
+        LuisScheme GetData();
+        void SetData(LuisScheme luisSchemes);
     }
 }
