@@ -5,13 +5,13 @@ namespace LuisManager.WPF.Messages
 {
     public class UpdateLanesMessage
     {
-        public UpdateLanesMessage(ItemViewModel item, DevelopmentStatus previousStatus)
+        public UpdateLanesMessage(TreeItemViewModel treeItem, DevelopmentStatus previousStatus)
         {
-            Item = item;
+            TreeItem = treeItem;
             PreviousStatus = previousStatus;
         }
 
-        public ItemViewModel Item { get; }
+        public TreeItemViewModel TreeItem { get; }
 
         public DevelopmentStatus PreviousStatus { get; }
     }

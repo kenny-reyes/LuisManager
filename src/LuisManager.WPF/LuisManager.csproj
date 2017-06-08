@@ -71,6 +71,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controls\LuisTreeView.cs" />
+    <Compile Include="Controls\LuisTreeViewItem.cs" />
     <Compile Include="Converters\BoolToVisibilityConverter.cs" />
     <Compile Include="Helpers\FileHelper.cs" />
     <Compile Include="Helpers\JsonHelper.cs" />
@@ -79,7 +81,8 @@
     <Compile Include="Messages\UpdateLanesMessage.cs" />
     <Compile Include="ViewModels\AboutViewModel.cs" />
     <Compile Include="ViewModels\KanbanViewModel.cs" />
-    <Compile Include="ViewModels\Models\ItemViewModel.cs" />
+    <Compile Include="ViewModels\Models\TreeItemViewModel.cs" />
+    <Compile Include="ViewModels\Models\NotifyScreen.cs" />
     <Compile Include="Views\EditItemView.xaml.cs">
       <DependentUpon>EditItemView.xaml</DependentUpon>
     </Compile>

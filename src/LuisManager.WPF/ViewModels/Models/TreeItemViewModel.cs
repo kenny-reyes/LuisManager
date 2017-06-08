@@ -4,27 +4,24 @@ using LuisManager.WPF.Messages;
 
 namespace LuisManager.WPF.ViewModels.Models
 {
-    public class ItemViewModel : PropertyChangedBase
+    public class TreeItemViewModel : PropertyChangedBase
     {
         private readonly LuisScheme _luisScheme;
         private readonly IEventAggregator _eventAggregator;
 
-        public ItemViewModel(IEventAggregator eventAggregator)
+        public TreeItemViewModel(IEventAggregator eventAggregator)
         {
             _luisScheme = new LuisScheme();
             _eventAggregator = eventAggregator;
         }
 
-        public ItemViewModel(LuisScheme luisScheme, IEventAggregator eventAggregator)
+        public TreeItemViewModel(LuisScheme luisScheme, IEventAggregator eventAggregator)
         {
             _luisScheme = luisScheme;
             _eventAggregator = eventAggregator;
         }
 
-        public LuisScheme LuisScheme
-        {
-            get => _luisScheme;
-        }
+        //public IObservableCollection<TreeItemViewModel> 
 
         //public string Id
         //{

@@ -154,7 +154,7 @@
     <value>Help</value>
   </data>
   <data name="ItemNo_Header" xml:space="preserve">
-    <value>Item No</value>
+    <value>TreeItem No</value>
   </data>
   <data name="ListView_Tab" xml:space="preserve">
     <value>List view </value>

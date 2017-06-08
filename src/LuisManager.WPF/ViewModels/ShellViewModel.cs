@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Caliburn.Micro;
 using LuisManager.WPF.Messages;
+using LuisManager.WPF.ViewModels.Models;
 
 namespace LuisManager.WPF.ViewModels
 {
@@ -31,7 +32,7 @@ namespace LuisManager.WPF.ViewModels
         {
             DisplayName = Localization.Resources.Title_Shell;
             _eventAggregator.Subscribe(this);
-            _mainViewModel.ScreenList = new List<Screen>{ _listProductsViewModel, _kanbanViewModel}; 
+            _mainViewModel.ScreenList = new List<NotifyScreen>{ _listProductsViewModel, _kanbanViewModel}; 
             ActivateItem(_mainViewModel);
             base.OnViewAttached(view, context);
         }
@@ -44,7 +45,7 @@ namespace LuisManager.WPF.ViewModels
 
         public void Handle(EditItemMessage message)
         {
-            _editItemViewModel.Item = message.Item;
+            _editItemViewModel.TreeItem = message.TreeItem;
             _windowManager.ShowDialog(_editItemViewModel);
         }
 

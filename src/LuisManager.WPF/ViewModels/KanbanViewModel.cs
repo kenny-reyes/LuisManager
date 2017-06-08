@@ -1,8 +1,10 @@
 ﻿using Caliburn.Micro;
+using LuisManager.Domain;
+using LuisManager.WPF.ViewModels.Models;
 
 namespace LuisManager.WPF.ViewModels
 {
-    public sealed class KanbanViewModel : Screen
+    public sealed class KanbanViewModel : NotifyScreen
     {
         private readonly MainViewModel _mainViewModel;
         private readonly IEventAggregator _eventAggregator;
@@ -14,6 +16,12 @@ namespace LuisManager.WPF.ViewModels
             DisplayName = Localization.Resources.GridView_Tab;
         }
 
-        public string hola {get;}
+        public LuisScheme Data => _mainViewModel.Data;
+
+        public override void DoNotifyScreen()
+        {
+            NotifyOfPropertyChange(() => Data);
+            base.DoNotifyScreen();
+        }
     }
 }

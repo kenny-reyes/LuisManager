@@ -8,7 +8,7 @@ namespace LuisManager.WPF.ViewModels.Models
     {
         public DevelopmentStatus Status { get; set; }
 
-        public IEnumerable<ItemViewModel> Items { get; set; }
+        public IEnumerable<TreeItemViewModel> Items { get; set; }
 
         public int CascadeLevel { get; set; }        
     }

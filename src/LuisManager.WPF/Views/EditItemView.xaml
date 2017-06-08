@@ -33,7 +33,7 @@
             <ColumnDefinition Width="40"/>
         </Grid.ColumnDefinitions>
         <TextBlock Grid.Row="1" Grid.Column="1" Style="{StaticResource DialogTextBlockStyle}"
-                   Text="Item No." />
+                   Text="TreeItem No." />
         <TextBlock Grid.Row="2" Grid.Column="1" Style="{StaticResource DialogTextBlockStyle}"
                    Text="Engineer:" />
         <TextBlock Grid.Row="3" Grid.Column="1" Style="{StaticResource DialogTextBlockStyle}" 

@@ -9,7 +9,7 @@ namespace LuisManager.WPF.ViewModels
     public sealed class EditItemViewModel : Screen
     {
         private readonly string _imagesDirectory = AppDomain.CurrentDomain.BaseDirectory + "Assets\\";
-        private Models.ItemViewModel _item;
+        private Models.TreeItemViewModel _treeItem;
         private DevelopmentStatus _status;
         private string _rawMaterial;
         private string _name;
@@ -28,22 +28,22 @@ namespace LuisManager.WPF.ViewModels
             DisplayName = Localization.Resources.Title_Shell;
         }
 
-        public Models.ItemViewModel Item
+        public Models.TreeItemViewModel TreeItem
         {
-            get => _item;
+            get => _treeItem;
             set
             {
-                _item = value;
-                //Engineer = _item.Engineer;
-                //Id = _item.Id;
-                //Name = _item.Name;
-                //RawMaterial = _item.RawMaterial;
-                //DevelopmentStartDate = _item.DevelopmentStartDate;
-                //ExpectedCompletionDate = _item.ExpectedCompletionDate;
-                //SupplyManagementContact = _item.SupplyManagementContact;
-                //Notes = _item.Notes;
-                //Status = _item.Status;
-                //ImageSource = new Uri(_imagesDirectory + Item.ImageSource);
+                _treeItem = value;
+                //Engineer = _treeItem.Engineer;
+                //Id = _treeItem.Id;
+                //Name = _treeItem.Name;
+                //RawMaterial = _treeItem.RawMaterial;
+                //DevelopmentStartDate = _treeItem.DevelopmentStartDate;
+                //ExpectedCompletionDate = _treeItem.ExpectedCompletionDate;
+                //SupplyManagementContact = _treeItem.SupplyManagementContact;
+                //Notes = _treeItem.Notes;
+                //Status = _treeItem.Status;
+                //ImageSource = new Uri(_imagesDirectory + TreeItem.ImageSource);
             }
         }
 
@@ -178,18 +178,18 @@ namespace LuisManager.WPF.ViewModels
 
         public void SaveAndCloseEditWindow()
         {
-            //var previousStatus = _item.Status;
-            //_item.Engineer = Engineer;
-            //_item.Id = Id;
-            //_item.Name = Name;
-            //_item.RawMaterial = RawMaterial;
-            //_item.DevelopmentStartDate = DevelopmentStartDate;
-            //_item.ExpectedCompletionDate = ExpectedCompletionDate;
-            //_item.SupplyManagementContact = SupplyManagementContact;
-            //_item.Notes = Notes;
-            //_item.Status = Status;
-            //_item.ImageSource = ImageSource.LocalPath.Replace(_imagesDirectory, string.Empty);
-            //_eventAggregator.PublishOnUIThread(new UpdateLanesMessage(_item, previousStatus));
+            //var previousStatus = _treeItem.Status;
+            //_treeItem.Engineer = Engineer;
+            //_treeItem.Id = Id;
+            //_treeItem.Name = Name;
+            //_treeItem.RawMaterial = RawMaterial;
+            //_treeItem.DevelopmentStartDate = DevelopmentStartDate;
+            //_treeItem.ExpectedCompletionDate = ExpectedCompletionDate;
+            //_treeItem.SupplyManagementContact = SupplyManagementContact;
+            //_treeItem.Notes = Notes;
+            //_treeItem.Status = Status;
+            //_treeItem.ImageSource = ImageSource.LocalPath.Replace(_imagesDirectory, string.Empty);
+            //_eventAggregator.PublishOnUIThread(new UpdateLanesMessage(_treeItem, previousStatus));
             CloseEditWindow();
         }
     }

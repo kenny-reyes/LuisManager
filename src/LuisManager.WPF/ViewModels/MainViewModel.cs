@@ -39,7 +39,7 @@ namespace LuisManager.WPF.ViewModels
             }
         }
 
-        public List<Screen> ScreenList { get; set; }
+        public List<NotifyScreen> ScreenList { get; set; }
 
         public LuisScheme Data
         {
@@ -66,7 +66,7 @@ namespace LuisManager.WPF.ViewModels
 
         public void NewItem()
         {
-            var item = new ItemViewModel(_eventAggregator);
+            var item = new TreeItemViewModel(_eventAggregator);
             _eventAggregator.PublishOnUIThread(new EditItemMessage(item));
 
         }
@@ -88,14 +88,13 @@ namespace LuisManager.WPF.ViewModels
 
         public void Save()
         {
-            //var products = DevelopmentItems?.Select(item => item.LuisScheme);
+            //var products = DevelopmentItems?.Select(treeItem => treeItem.LuisScheme);
             //_dataProvider.SetData(products);
         }
 
         public void OpenFile()
         {
-            var openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "json|*.json";
+            var openFileDialog = new OpenFileDialog {Filter = "json|*.json"};
             try
             {
                 if (openFileDialog.ShowDialog() == true)
@@ -104,7 +103,8 @@ namespace LuisManager.WPF.ViewModels
                 }
                 if (string.IsNullOrWhiteSpace(_fileOpennedPath)) return;
                 _configurationService.Configuration.JsonFilePath = _fileOpennedPath;
-                _data = _dataProvider.GetData();
+                Data = _dataProvider.GetData();
+                ScreenList.ForEach(x => x.DoNotifyScreen());
             }
             catch (Exception e)
             {

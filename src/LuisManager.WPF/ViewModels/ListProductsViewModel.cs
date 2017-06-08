@@ -1,8 +1,10 @@
 ﻿using Caliburn.Micro;
+using LuisManager.Domain;
+using LuisManager.WPF.ViewModels.Models;
 
 namespace LuisManager.WPF.ViewModels
 {
-    public sealed class ListProductsViewModel : Screen
+    public sealed class ListProductsViewModel : NotifyScreen
     {
         private readonly MainViewModel _mainViewModel;
 
@@ -12,7 +14,7 @@ namespace LuisManager.WPF.ViewModels
             DisplayName = Localization.Resources.ListView_Tab;
         }
 
-        //public ObservableCollection<ItemViewModel> DevelopmentItems => _mainViewModel.DevelopmentItems;           
+        public LuisScheme Data => _mainViewModel.Data;           
 
         public void SortProducts(object sortField, bool isSortAscending)
         {
@@ -24,6 +26,12 @@ namespace LuisManager.WPF.ViewModels
             //var sortDirection = isSortAscending ? ListSortDirection.Ascending : ListSortDirection.Descending;
             //view.SortDescriptions.Clear();
             //view.SortDescriptions.Add(new SortDescription(field, sortDirection));
+        }
+
+        public override void DoNotifyScreen()
+        {
+            NotifyOfPropertyChange(() => Data);
+            base.DoNotifyScreen();
         }
     }
 }
